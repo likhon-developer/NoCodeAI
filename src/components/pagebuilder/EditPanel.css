@@ -1,0 +1,209 @@
+.edit-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.edit-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+}
+
+.edit-panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #0078d7;
+}
+
+.btn-delete {
+  background-color: transparent;
+  color: #e0e0e0;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 5px;
+}
+
+.btn-delete:hover {
+  color: #f44336;
+}
+
+.edit-panel-tabs {
+  display: flex;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #333;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tab-btn:not(:last-child) {
+  border-right: 1px solid #333;
+}
+
+.tab-btn:hover {
+  background-color: #3a3a3a;
+}
+
+.tab-btn.active {
+  background-color: #252526;
+  color: #0078d7;
+  border-bottom: 2px solid #0078d7;
+}
+
+.edit-panel-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.property-group {
+  margin-bottom: 20px;
+}
+
+.property-row {
+  margin-bottom: 12px;
+}
+
+.property-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #b0b0b0;
+}
+
+.property-row input[type="text"],
+.property-row input[type="number"],
+.property-row select,
+.property-row textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: #3c3c3c;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.property-row textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.color-input-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.color-input-wrapper input[type="color"] {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.color-input-wrapper input[type="text"] {
+  flex: 1;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.btn-select-image {
+  width: 100%;
+  padding: 8px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-select-image:hover {
+  background-color: #0066b3;
+}
+
+/* Light theme variants */
+.edit-panel.light-theme {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.edit-panel.light-theme .edit-panel-header {
+  border-bottom-color: #ddd;
+}
+
+.edit-panel.light-theme .edit-panel-tabs {
+  background-color: #e0e0e0;
+  border-bottom-color: #ddd;
+}
+
+.edit-panel.light-theme .tab-btn {
+  color: #333;
+  border-right-color: #ddd;
+}
+
+.edit-panel.light-theme .tab-btn:hover {
+  background-color: #d5d5d5;
+}
+
+.edit-panel.light-theme .tab-btn.active {
+  background-color: #f5f5f5;
+  color: #0078d7;
+}
+
+.edit-panel.light-theme .property-row input[type="text"],
+.edit-panel.light-theme .property-row input[type="number"],
+.edit-panel.light-theme .property-row select,
+.edit-panel.light-theme .property-row textarea {
+  background-color: #fff;
+  color: #333;
+  border-color: #ddd;
+}
+
+/* Scrollbar styling */
+.edit-panel-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.edit-panel-content::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+.edit-panel-content::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.edit-panel-content::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}

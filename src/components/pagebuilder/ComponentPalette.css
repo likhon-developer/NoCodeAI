@@ -1,0 +1,122 @@
+.component-palette {
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.component-palette h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #0078d7;
+}
+
+.component-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.category-btn {
+  padding: 6px 12px;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-btn:hover {
+  background-color: #4a4a4a;
+}
+
+.category-btn.active {
+  background-color: #0078d7;
+  color: white;
+}
+
+.component-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.component-item {
+  background-color: #3a3a3a;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: move;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.component-item:hover {
+  background-color: #4a4a4a;
+  transform: translateY(-2px);
+}
+
+.component-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.component-name {
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+/* Light theme variants */
+.component-palette.light-theme .category-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.component-palette.light-theme .category-btn:hover {
+  background-color: #d5d5d5;
+}
+
+.component-palette.light-theme .category-btn.active {
+  background-color: #0078d7;
+  color: white;
+}
+
+.component-palette.light-theme .component-item {
+  background-color: #e0e0e0;
+}
+
+.component-palette.light-theme .component-item:hover {
+  background-color: #d5d5d5;
+}
+
+.component-palette.light-theme .component-name {
+  color: #333;
+}
+
+/* Scrollbar styling */
+.component-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.component-list::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+.component-list::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.component-list::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}

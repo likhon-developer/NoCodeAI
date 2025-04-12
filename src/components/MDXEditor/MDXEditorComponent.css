@@ -1,0 +1,197 @@
+.mdx-editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.mdx-editor {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  /* Reset some browser defaults */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mdx-editor-content {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 16px;
+  min-height: 250px;
+  color: #e0e0e0;
+}
+
+.mdx-editor blockquote {
+  border-left: 4px solid #666;
+  margin-left: 0;
+  padding-left: 16px;
+  color: #aaa;
+}
+
+.mdx-editor h1, 
+.mdx-editor h2, 
+.mdx-editor h3, 
+.mdx-editor h4, 
+.mdx-editor h5, 
+.mdx-editor h6 {
+  color: #0078d7;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.mdx-editor h1 {
+  font-size: 28px;
+}
+
+.mdx-editor h2 {
+  font-size: 24px;
+}
+
+.mdx-editor h3 {
+  font-size: 20px;
+}
+
+.mdx-editor code {
+  background-color: #2d2d2d;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9em;
+}
+
+.mdx-editor pre {
+  background-color: #2d2d2d;
+  padding: 16px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.mdx-editor pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.mdx-editor a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.mdx-editor a:hover {
+  text-decoration: underline;
+}
+
+.mdx-editor table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.mdx-editor table th,
+.mdx-editor table td {
+  border: 1px solid #444;
+  padding: 8px 12px;
+}
+
+.mdx-editor table th {
+  background-color: #2d2d2d;
+  font-weight: 600;
+}
+
+.mdx-editor-toolbar {
+  display: flex;
+  align-items: center;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #444;
+  padding: 8px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toolbar-save-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: auto;
+}
+
+.toolbar-save-button:hover {
+  background-color: #0066b3;
+}
+
+.toolbar-save-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.mdx-editor-status {
+  font-size: 12px;
+  color: #888;
+  padding: 8px;
+  text-align: right;
+  border-top: 1px solid #444;
+}
+
+/* Light theme variants */
+.light-theme .mdx-editor-container {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-theme .mdx-editor {
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.light-theme .mdx-editor-content {
+  color: #333;
+}
+
+.light-theme .mdx-editor-toolbar {
+  background-color: #f5f5f5;
+  border-bottom-color: #ddd;
+}
+
+.light-theme .mdx-editor blockquote {
+  border-left-color: #ccc;
+  color: #666;
+}
+
+.light-theme .mdx-editor h1, 
+.light-theme .mdx-editor h2, 
+.light-theme .mdx-editor h3, 
+.light-theme .mdx-editor h4, 
+.light-theme .mdx-editor h5, 
+.light-theme .mdx-editor h6 {
+  color: #0078d7;
+}
+
+.light-theme .mdx-editor code {
+  background-color: #f0f0f0;
+}
+
+.light-theme .mdx-editor pre {
+  background-color: #f5f5f5;
+}
+
+.light-theme .mdx-editor table th,
+.light-theme .mdx-editor table td {
+  border-color: #ddd;
+}
+
+.light-theme .mdx-editor table th {
+  background-color: #f0f0f0;
+}
